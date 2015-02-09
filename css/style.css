@@ -7,15 +7,19 @@ and open the template in the editor.
     Author     : emorozov
 */
 
-body {
-    position: absolute;
-    padding-top: 60px;
+/*html {
+    height: 100%;
 }
 
+*/
 
-        /* TOP MENU AND HEADER */
-        
-.custom-navbar {
+html { font-size:100%; }
+
+body {
+    font-family: "Roboto",sans-serif;
+}
+
+.gradient {
     
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(left,  rgba(69,72,77,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6+ */
@@ -26,92 +30,127 @@ body {
     background: linear-gradient(to right,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 
-/*    border-bottom: 1px solid #e74c3c;*/
 }
 
-    .custom-navbar-brand {
-        color: #ffffff;
-    }
-    
-        .custom-navbar-brand:hover{
-            color: #e74c3c;
-        }
-    
-    #phoneInHeader {
-        padding: 15px; 
-        color: #ffffff;
-    }    
-    
-    
-    .custom-navbar-right > li > a {
-        color: #ffffff;
-    }
-    
-        .custom-navbar-right > li > a:hover{
-            background-color: transparent;
-            color: #e74c3c;
-        }
+/*-- HEADER --*/
         
-                                /* END */
-                                
-                                /* FEATURES */
-                                
-    .block-features {
-        position: relative;
-        margin-top: 5em;
+header {
+    
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2% 0;
+    
+    
+/*    border-bottom: 1px solid #e74c3c;*/
+}
+    
+    .brand {
+        display: inline-block;
+        width: 79%;
+        font-size: 1.3rem;
+        height: 40px;
+        color: #ffffff;
+/*        padding: 15px 0 0 2%;*/
+        text-decoration: none;
     }
+    
+        .brand:hover {
+            color: #e74c3c;
+        }
+    
+    .phone-company {
+        display: inline-block;
+        width: 10%;
+        color: #ffffff;
+        font-size: 100%;
+        
+    }
+    
+    .mail-company {
+        text-decoration: none;
+        display: inline-block;
+        width: 10%;
+        color: #ffffff;
+    }
+        
+
+/*-- END HEADER --*/
+
+/*-- MAIN CONTAINER --*/
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 0 70px 0;
+}                                
                                 
-                                /* END */                             
+/*-- END MAIN CONTAINER --*/   
+                                
+/*-- FOOTER --*/
+
+footer {
+    
+    position: fixed; 
+    left: 0; bottom: 0;
+    height: 50px;
+    width: 100%; 
+}
+
+    footer > a {
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 0 0 0;
+        text-decoration: none;
+    }
+    
+        footer > a:hover {
+            color: #e74c3c;
+        }
+                                
+/*-- END FOOTER --*/   
+
+    @media only screen and (max-width: 1920px) {
+        
+        body {font-size:10px; font-size:1rem;}
+        .navbar-brand {font-size:13px; font-size:1.3rem;}
+        
+    }
      
     @media only screen and (max-width: 768px) {
         
-                /* TOP MENU AND HEADER */
-                
-
-        .custom-navbar-brand {
-            margin-left: 0.5em;
-        }
-        
-        .custom-navbar-right {
-            margin-left: 0.5em;
-        }
-        
-        #phoneInHeader {
-            padding-top: 0em; 
-        }    
-
-
-        .custom-navbar-right > li > a {
-            padding-top: 0em;
-        }    
-        
-                            /* END */
+        body {font-size:9px; font-size:0.9em;}
+        .navbar-brand {font-size:12px; font-size:1.2rem;}
         
     }
-        
+    
     @media only screen and (max-width: 480px) {
         
-                /* TOP MENU AND HEADER */
-                
-
-        .custom-navbar-brand {
-            margin-left: 0.5em;
-        }
-        
-        .custom-navbar-right {
-            margin-left: 0.5em;
-        }
-        
-        #phoneInHeader {
-            padding-top: 0em;
-        }    
-
-
-        .custom-navbar-right > li > a {
-            padding-top: 0em;
-        }
-        
-                        /* END */
+        body {font-size:8px; font-size:0.8em;}
+        .navbar-brand {font-size:11px; font-size:1.1rem;}
         
     }
+    
+/*    @media only screen and (min-width: 480px) {
+        
+        body {font-size:9px; font-size:0.9em;}
+        
+    }*/
+        
+    
+    
+
+/*@media (max-width: 640px) { body {font-size:1.2rem;} }
+
+ @media (min-width: 640px) { body {font-size:1rem;} } 
+
+@media (min-width:960px) { body {font-size:1.2rem;} }
+
+ @media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+
     
