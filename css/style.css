@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : emorozov
+*/
+
+body {
+    position: absolute;
+    padding-top: 60px;
+}
+
+
+        /* TOP MENU AND HEADER */
+        
+.custom-navbar {
+    
+    background: rgb(69,72,77); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(69,72,77,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+/*    border-bottom: 1px solid #e74c3c;*/
+}
+
+    .custom-navbar-brand {
+        color: #ffffff;
+    }
+    
+        .custom-navbar-brand:hover{
+            color: #e74c3c;
+        }
+    
+    #phoneInHeader {
+        padding: 15px; 
+        color: #ffffff;
+    }    
+    
+    
+    .custom-navbar-right > li > a {
+        color: #ffffff;
+    }
+    
+        .custom-navbar-right > li > a:hover{
+            background-color: transparent;
+            color: #e74c3c;
+        }
+        
+                                /* END */
+                                
+                                /* FEATURES */
+                                
+    .block-features {
+        position: relative;
+        margin-top: 5em;
+    }
+                                
+                                /* END */                             
+     
+    @media only screen and (max-width: 768px) {
+        
+                /* TOP MENU AND HEADER */
+                
+
+        .custom-navbar-brand {
+            margin-left: 0.5em;
+        }
+        
+        .custom-navbar-right {
+            margin-left: 0.5em;
+        }
+        
+        #phoneInHeader {
+            padding-top: 0em; 
+        }    
+
+
+        .custom-navbar-right > li > a {
+            padding-top: 0em;
+        }    
+        
+                            /* END */
+        
+    }
+        
+    @media only screen and (max-width: 480px) {
+        
+                /* TOP MENU AND HEADER */
+                
+
+        .custom-navbar-brand {
+            margin-left: 0.5em;
+        }
+        
+        .custom-navbar-right {
+            margin-left: 0.5em;
+        }
+        
+        #phoneInHeader {
+            padding-top: 0em;
+        }    
+
+
+        .custom-navbar-right > li > a {
+            padding-top: 0em;
+        }
+        
+                        /* END */
+        
+    }
+    
