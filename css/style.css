@@ -26,18 +26,21 @@ body {
 
 }
 
+.background {
+    background-image: url(../images/background_block.png);
+}
 
 /*-- HEADER --*/
         
 header {
     position: relative;
     height: auto;
-    border-bottom: 1px solid #f28277;
+    border-bottom: 1px solid #ee5747;
 }
     
     .product {
         display: inline-block;
-        color: #f28277;
+        color: #ee5747;
         text-decoration: none;
         text-align: center;
         width: 100%;
@@ -59,7 +62,7 @@ header {
     }
 
         .mail-company:hover {
-            color: #f28277;
+            color: #ee5747;
         }
 
 /*-- END HEADER --*/
@@ -74,18 +77,47 @@ header {
 
 .wrapper-section-content {
     width: 100%;
+    height: auto;
     margin: 40px 0 0 0;
-    
 }
 
     /*-- FEATURES AND CAROUSEL BLOCKS --*/
     
     .block-features {
         color: #ffffff;
+        padding: 14px;
     }
     
+        .block-features > h1 {
+            margin: 10px 0 20px 0;
+            padding: 0 0 0 35px;
+            color: #ee5747;
+        }
+        
+        .block-features > p {
+            padding: 0 0 0 35px;
+            margin: 0 0 10px 0;
+        }
+        
+        .block-features > ul {
+            margin: 0 0 10px 60px;
+        }
+        
+            .block-features > ul > li {
+                color: #ee5747;
+                padding: 0 0 0 5px;
+                margin: 20px 0 20px 0;
+            }
+        
+                .block-features > ul > li > span {
+                    color: #ffffff;
+                }
+
+    
     .block-carousel {
-        color: #ffffff;
+        color: #red;
+        padding: 14px;
+/*        height: 50%;*/
     }
     
     /*-- END FEATURES AND CAROUSEL BLOCKS--*/
@@ -97,10 +129,11 @@ header {
 
 footer {
     
-    position: fixed; 
+    position: fixed;
     left: 0; bottom: 0;
     height: 50px;
-    width: 100%; 
+    width: 100%;
+    border-top: 1px solid #ee5747;
 }
 
     footer > a {
@@ -114,7 +147,7 @@ footer {
     }
     
         footer > a:hover {
-            color: #f28277;
+            color: #ee5747;
         }
                                 
 /*-- END FOOTER --*/   
@@ -122,6 +155,8 @@ footer {
     @media only screen and (max-width: 1920px) {
         
         .product {font-size:11px; font-size:1.1rem;}
+        
+        .block-features > h1 {font-size:30px; font-size:3rem;}
         
     }
 
@@ -132,5 +167,6 @@ footer {
     }
 
 
+   
 
     

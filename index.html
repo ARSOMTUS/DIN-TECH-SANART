@@ -9,16 +9,20 @@
         <link href="css/html5reset.css" rel="stylesheet">
         <link href="css/col.css" rel="stylesheet">
         <link href="css/12cols.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/flexslider.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <script src="js/jquery/jquery.js"></script>
+        <script src="js/jquery/jquery.flexslider-min.js"></script>
+        <script src="js/slider_start.js"></script>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     
-    <body>
+    
+    <body class="background">
         
         <!-- HEADER -->
         
-        <header class="gradient">
+        <header class="">
             <div class="section group">
                 <div class="col span_8_of_12">   
                     <a href="#" class="product">Автохимия от компании SANART+</a>
@@ -42,12 +46,58 @@
             <!-- FEATURES AND CAROUSEL -->
             
             <div class="section group">
-                <div class="wrapper-section-content group gradient">
+                <div class="wrapper-section-content group">
                     <div class="col span_5_of_12">   
-                        <div class="block-features">H1, H2, список</div>
+                        <div class="block-features">
+                            <h1>Sanart+</h1>
+                            <p>
+                                Крупнейший производитель профессиональных 
+                                химических продуктов ориентированный на 
+                                сотрудничество с авто индустрией.
+                            </p>
+                            <ul>
+                                <li>
+                                    <span>Лидер в области инноваций.</span>
+                                </li>
+                                <li>
+                                    <span>
+                                    Экологическая безопасность, экономичность 
+                                    и ориентирование на потребителя.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                    Оригинальный, запоминающийся дизайн 
+                                    и упаковка.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                    Доступные оптовые цены для партнёров.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col span_7_of_12">   
-                        <div class="block-carousel">Карусель</div>
+                        <div class="block-carousel">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="images/man_with_sanart.jpg" alt="1">
+                                    </li>
+                                    <li>
+                                        <img src="images/hand_with_sanart.jpg" alt="2">
+                                    </li>
+                                    <!--<li>
+                                      <img src="slide3.jpg" />
+                                    </li>
+                                    <li>
+                                      <img src="slide4.jpg" />
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>    
             </div>        
@@ -61,7 +111,7 @@
         
         <!-- FOOTER -->
         
-        <footer class="gradient">
+        <footer class="background">
             <a href="http://www.din-tech.ru/">Din-Technology 2015</a>
         </footer>
         
