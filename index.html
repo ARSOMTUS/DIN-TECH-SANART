@@ -6,7 +6,9 @@
         <title>Sanart+ - автохимия, автокосметика от производителя</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/html5reset.css" rel="stylesheet">
+        <link href="css/col.css" rel="stylesheet">
+        <link href="css/12cols.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <script src="js/jquery/jquery.js"></script>
@@ -17,9 +19,17 @@
         <!-- HEADER -->
         
         <header class="gradient">
-            <a href="#" class="brand">Автохимия от компании SANART+</a>
-            <span class="phone-company">(812) 372-67-87</span>
-            <a href="#" class="mail-company">globe@din-tech.ru</a>
+            <div class="section group">
+                <div class="col span_8_of_12">   
+                    <a href="#" class="product">Автохимия от компании SANART+</a>
+                </div>
+                <div class="col span_2_of_12">   
+                    <span class="phone-company">(812) 372-67-87</span>
+                </div>
+                <div class="col span_2_of_12">   
+                    <a href="#" class="mail-company">globe@din-tech.ru</a>
+                </div>            
+            </div>
         </header>
         
         <!-- END -->
@@ -28,7 +38,22 @@
         <!-- CONTENT -->
         
         <div class="wrapper">
-            <p>Ежегодно более 30 млн. кругов Globe используется по всему миру, примерно по одному кругу каждую секунду.</p>
+            
+            <!-- FEATURES AND CAROUSEL -->
+            
+            <div class="section group">
+                <div class="wrapper-section-content group gradient">
+                    <div class="col span_5_of_12">   
+                        <div class="block-features">H1, H2, список</div>
+                    </div>
+                    <div class="col span_7_of_12">   
+                        <div class="block-carousel">Карусель</div>
+                    </div>
+                </div>    
+            </div>        
+            
+            <!-- END -->
+            
         </div>
         
         <!-- END -->
