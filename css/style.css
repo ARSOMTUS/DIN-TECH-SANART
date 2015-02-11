@@ -79,6 +79,7 @@ header {
     width: 100%;
     height: auto;
     margin: 40px 0 0 0;
+    border-bottom: 1px #ee5747 solid; 
 }
 
     /*-- FEATURES AND CAROUSEL BLOCKS --*/
@@ -115,10 +116,9 @@ header {
 
     
     .block-carousel {
-        color: #red;
         padding: 14px;
-/*        height: 50%;*/
     }
+    
     
     /*-- END FEATURES AND CAROUSEL BLOCKS--*/
     
@@ -154,15 +154,27 @@ footer {
 
     @media only screen and (max-width: 1920px) {
         
+        /*-- HEADER --*/
+        
         .product {font-size:11px; font-size:1.1rem;}
         
+        /*-- END HEADER --*/
+        
+        /*-- FEATURES AND CAROUSEL BLOCKS --*/
+        
         .block-features > h1 {font-size:30px; font-size:3rem;}
+        
+        /*-- END FEATURES AND CAROUSEL BLOCKS --*/ 
         
     }
 
     @media only screen and (max-width: 480px) {
         
+        /*-- HEADER --*/
+        
         .product {font-size:10px; font-size:1rem;}
+        
+        /*-- END HEADER --*/
         
     }
 
