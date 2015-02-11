@@ -11,6 +11,8 @@ html { font-size:100%; }
 
 body {
     font-family: "Roboto",sans-serif;
+    background-image: url(../images/background_block.png);
+    color: #ffffff;
 }
 
 .gradient {
@@ -29,6 +31,38 @@ body {
 .background {
     background-image: url(../images/background_block.png);
 }
+
+.white-background {
+    background-color: #ffffff;
+}
+
+h1 {
+    margin: 10px 0 20px 0;
+    color: #ee5747;
+}
+
+.h1-version {
+    color: #333333;
+}
+
+p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.adaptive-img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.wrapp-div-for-img {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
 
 /*-- HEADER --*/
         
@@ -71,7 +105,6 @@ header {
 
 .wrapper {
     position: relative;
-/*    width: 100%;*/
     padding: 0 0 70px 0;
 }
 
@@ -79,27 +112,14 @@ header {
     width: 100%;
     height: auto;
     margin: 40px 0 0 0;
-    border-bottom: 1px #ee5747 solid; 
 }
 
     /*-- FEATURES AND CAROUSEL BLOCKS --*/
     
     .block-features {
-        color: #ffffff;
         padding: 14px;
     }
     
-        .block-features > h1 {
-            margin: 10px 0 20px 0;
-            padding: 0 0 0 35px;
-            color: #ee5747;
-        }
-        
-        .block-features > p {
-            padding: 0 0 0 35px;
-            margin: 0 0 10px 0;
-        }
-        
         .block-features > ul {
             margin: 0 0 10px 60px;
         }
@@ -116,12 +136,91 @@ header {
 
     
     .block-carousel {
-        padding: 14px;
+        padding: 5%;
     }
     
     
     /*-- END FEATURES AND CAROUSEL BLOCKS--*/
     
+    
+    /*-- EXAMPLE BLOCK --*/
+    
+    .example-block {
+        padding: 14px;
+    }
+    
+        .example-block > button {
+            margin: 20px 0 0 0;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            padding: .8em 1em calc(.8em + 3px);
+            border-radius: 3px;
+            border: none;
+            background: #ee5747;
+            box-shadow: 0 -3px #a43b30 inset;
+            transition: 0.2s;
+        }
+    
+                .example-block > button:hover {
+                    background: #a43b30;
+                    cursor: pointer;
+                }
+
+                .example-block > button:active {
+                    background: #8f332a;
+                    box-shadow: 0 3px #8f332a inset;
+                }
+        
+    
+    /*-- END EXAMPLE BLOCK--*/
+    
+    /*-- THE RANGE OF PRODUCTS BLOCK --*/
+    
+    .range-block {
+        padding: 14px;
+    }
+
+        .row-product {
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid #cccccc;
+        }
+
+            .name-of-roduct {
+                line-height: 1.3;
+                color: #333333;
+            }
+
+            .description-product {
+                padding: 20px 0 0 0;
+                color: #333333;
+                line-height: 1.3;
+                text-align: justify;
+            }
+
+            .id-product {
+                display: inline-block;
+                width: 100%;
+                padding: 20px 0 0 0;
+                color: #333333;
+            }
+
+            .volume-product {
+                display: inline-block;
+                width: 100%;
+                padding: 10px 0 0 0;
+                color: #333333;
+            }
+
+            .cost-product {
+                display: inline-block;
+                width: 100%;
+                padding: 20px 0 0 0;
+                color: #333333;
+            }
+    
+    /*-- END THE RANGE OF PRODUCTS BLOCK --*/
                                 
 /*-- END MAIN CONTAINER --*/   
                                 
@@ -154,6 +253,9 @@ footer {
 
     @media only screen and (max-width: 1920px) {
         
+        
+        h1, .h1-version {font-size:30px; font-size:3rem;}
+        
         /*-- HEADER --*/
         
         .product {font-size:11px; font-size:1.1rem;}
@@ -162,9 +264,29 @@ footer {
         
         /*-- FEATURES AND CAROUSEL BLOCKS --*/
         
-        .block-features > h1 {font-size:30px; font-size:3rem;}
         
-        /*-- END FEATURES AND CAROUSEL BLOCKS --*/ 
+/*        .block-features > p {font-size:9px; font-size:0.9rem;}
+        
+        .block-features > ul {font-size:9px; font-size:0.9rem;}*/
+
+        
+        /*-- END FEATURES AND CAROUSEL BLOCKS --*/
+        
+        /*-- EXAMPLE BLOCK --*/
+        
+        
+        .example-block > button {font-size:11px; font-size:1.1rem;}
+        
+        
+        /*-- END EXAMPLE BLOCK --*/
+        
+        /*-- THE RANGE OF PRODUCTS BLOCK --*/
+    
+    
+    
+        /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+
+
         
     }
 
@@ -175,6 +297,14 @@ footer {
         .product {font-size:10px; font-size:1rem;}
         
         /*-- END HEADER --*/
+        
+        /*-- EXAMPLE BLOCK --*/
+        
+        .example-block > button {font-size:6px; font-size:0.6rem;}
+        
+        
+        /*-- END EXAMPLE BLOCK --*/
+
         
     }
 
