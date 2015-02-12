@@ -15,19 +15,6 @@ body {
     color: #ffffff;
 }
 
-.gradient {
-    
-    background: rgb(69,72,77); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(69,72,77,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* IE10+ */
-    background: linear-gradient(to right,  rgba(69,72,77,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-
-}
-
 .background {
     background-image: url(../images/background_block.png);
 }
@@ -37,7 +24,7 @@ body {
 }
 
 h1 {
-    margin: 10px 0 20px 0;
+    margin: 1% 0 2% 0;
     color: #ee5747;
 }
 
@@ -46,7 +33,7 @@ h1 {
 }
 
 p {
-    margin: 0 0 10px 0;
+    margin: 0 0 2% 0;
     line-height: 1.5;
 }
 
@@ -64,7 +51,6 @@ p {
 .add-left-margin {
     margin-left: 18px;
 }
-
 
 a:link {
     color: #ee5747;
@@ -120,6 +106,7 @@ header {
 
 /*-- END HEADER --*/
 
+
 /*-- MAIN CONTAINER --*/
 
 .wrapper {
@@ -133,6 +120,7 @@ header {
     margin: 40px 0 0 0;
 }
 
+
     /*-- FEATURES AND CAROUSEL BLOCKS --*/
     
     .block-features {
@@ -140,13 +128,13 @@ header {
     }
     
         .block-features > ul {
-            margin: 0 0 10px 60px;
+            margin: 4% 0 4% 60px;
         }
         
             .block-features > ul > li {
                 color: #ee5747;
                 padding: 0 0 0 5px;
-                margin: 20px 0 20px 0;
+                margin: 2% 0 2% 0;
             }
         
                 .block-features > ul > li > span {
@@ -157,7 +145,6 @@ header {
     .block-carousel {
         padding: 5%;
     }
-    
     
     /*-- END FEATURES AND CAROUSEL BLOCKS--*/
     
@@ -191,8 +178,8 @@ header {
                     box-shadow: 0 3px #8f332a inset;
                 }
         
-    
     /*-- END EXAMPLE BLOCK--*/
+    
     
     /*-- THE RANGE OF PRODUCTS BLOCK --*/
     
@@ -213,7 +200,7 @@ header {
             }
 
             .description-product {
-                padding: 20px 0 0 0;
+                padding: 3% 0 0 0;
                 color: #333333;
                 line-height: 1.3;
                 text-align: justify;
@@ -222,25 +209,26 @@ header {
             .id-product {
                 display: inline-block;
                 width: 100%;
-                padding: 20px 0 0 0;
+                padding: 3% 0 0 0;
                 color: #333333;
             }
 
             .volume-product {
                 display: inline-block;
                 width: 100%;
-                padding: 10px 0 0 0;
+                padding: 1% 0 0 0;
                 color: #333333;
             }
 
             .cost-product {
                 display: inline-block;
                 width: 100%;
-                padding: 20px 0 0 0;
+                padding: 3% 0 0 0;
                 color: #333333;
             }
             
     /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+    
     
     /*-- ABOUT COMPANY BLOCK --*/
     
@@ -250,7 +238,8 @@ header {
     
     /*-- END ABOUT COMPANY BLOCK --*/
     
-    /*-- ABOUT COMPANY BLOCK --*/
+    
+    /*-- QUALITY CERTIFICATES --*/
     
     .quality-certificates-block {
         padding: 14px;
@@ -264,7 +253,8 @@ header {
         line-height: 1.3;
     }
     
-    /*-- END ABOUT COMPANY BLOCK --*/
+    /*-- END QUALITY CERTIFICATES --*/
+    
     
     /*-- REVIEWS BLOCK --*/
     
@@ -276,18 +266,18 @@ header {
         display: inline-block;
         width: 100%;
         border-left: 5px solid #ee5747;
+        margin: 3% auto;
     }
     
         .wrapp-div-for-review > p {
-            padding: 0 15px 15px 15px;
+            padding: 2%;
         }
 
         .wrapp-div-for-review > span {
             display: inline-block;
             width: 90%;
-            padding: 0 0 0 15px;
+            padding: 0 0 0 2%;
             line-height: 1.3;
-            font-size: 85%;
         }
     
     /*-- END REVIEWS BLOCK --*/
@@ -305,8 +295,7 @@ header {
 
         .wrapp-div-for-term > h2 {
             color: #333333;
-            margin-bottom: 20px;
-            font-size: 20px;
+            margin-bottom: 2%;
             font-weight: 200;
             line-height: 30px;
         }
@@ -329,6 +318,7 @@ footer {
     height: 50px;
     width: 100%;
     border-top: 1px solid #ee5747;
+    z-index: 9999;
 }
 
     footer > a {
@@ -341,64 +331,166 @@ footer {
     
 /*-- END FOOTER --*/   
 
-    @media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1000px) {
         
         
-        h1, .h1-version {font-size:30px; font-size:3rem;}
-        
-        /*-- HEADER --*/
-        
-        .product {font-size:11px; font-size:1.1rem;}
-        
-        /*-- END HEADER --*/
-        
-        /*-- FEATURES AND CAROUSEL BLOCKS --*/
-        
-        
-/*        .block-features > p {font-size:9px; font-size:0.9rem;}
-        
-        .block-features > ul {font-size:9px; font-size:0.9rem;}*/
+    h1, .h1-version {font-size:30px; font-size:3rem;}
 
-        
-        /*-- END FEATURES AND CAROUSEL BLOCKS --*/
-        
-        /*-- EXAMPLE BLOCK --*/
-        
-        
-        .example-block > button {font-size:11px; font-size:1.1rem;}
-        
-        
-        /*-- END EXAMPLE BLOCK --*/
-        
-        /*-- THE RANGE OF PRODUCTS BLOCK --*/
-    
-    
-    
-        /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+    /*-- HEADER --*/
+
+    .product {font-size:11px; font-size:1.1rem;}
+
+    /*-- END HEADER --*/
+
+    /*-- FEATURES AND CAROUSEL BLOCKS --*/
+    /*-- END FEATURES AND CAROUSEL BLOCKS --*/
 
 
+    /*-- EXAMPLE BLOCK --*/
+
+    .example-block > button {font-size:11px; font-size:1.1rem;}
+
+    /*-- END EXAMPLE BLOCK --*/
+
+
+    /*-- THE RANGE OF PRODUCTS BLOCK --*/
+    /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+
+    /*-- REVIEWS BLOCK --*/
+
+    .wrapp-div-for-review > span { font-size: 8px; font-size: 0.8rem; }
+
+    /*-- END REVIEWS BLOCK --*/
+
+
+    /*-- TERMS OF COOPERATION --*/
+
+    .wrapp-div-for-term > h2 { font-size: 15px; font-size: 1.5rem;}
+
+    /*-- END TERMS OF COOPERATION --*/
         
+}
+    
+@media only screen and (min-width: 640px) and (max-width: 1000px) {
+        
+    h1, .h1-version {font-size:17px; font-size:1.7rem;}
+
+    p {font-size:7px; font-size:0.7rem;}
+
+
+    /*-- HEADER --*/
+
+    .phone-company { font-size:8px; font-size:0.8rem; }
+
+    .mail-company { font-size:8px; font-size:0.8rem; }
+
+    /*-- END HEADER --*/
+
+
+    /*-- FEATURES AND CAROUSEL BLOCKS --*/
+
+        .block-features > ul { font-size:7px; font-size:0.7rem; }
+
+    /*-- END FEATURES AND CAROUSEL BLOCKS --*/
+
+
+    /*-- EXAMPLE BLOCK --*/
+
+        .example-block > button {font-size:7px; font-size:0.7rem;}
+
+    /*-- END EXAMPLE BLOCK --*/
+
+
+    /*-- THE RANGE OF PRODUCTS BLOCK --*/
+
+        .name-of-roduct { font-size:7px; font-size:0.7rem; }
+
+        .id-product, .volume-product, .cost-product {
+            font-size:7px; font-size:0.7rem;
+        }
+
+    /*-- QUALITY CERTIFICATES --*/
+
+        .description-standart { font-size:7px; font-size:0.7rem; }
+
+    /*-- END QUALITY CERTIFICATES --*/
+
+    /*-- REVIEWS BLOCK --*/
+
+        .wrapp-div-for-review > span { font-size: 5px; font-size: 0.5rem; }
+
+    /*-- END REVIEWS BLOCK --*/
+
+    /*-- TERMS OF COOPERATION --*/
+
+        .wrapp-div-for-term > h2 { font-size: 11px; font-size: 1.1rem;}
+
+    /*-- END TERMS OF COOPERATION --*/
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+        
+    h1, .h1-version {font-size:11px; font-size:1.1rem;}
+
+    p {font-size:6px; font-size:0.6rem;}
+
+    /*-- HEADER --*/
+
+    .product {font-size:10px; font-size:1rem;}
+
+    .phone-company { font-size:8px; font-size:0.8rem; }
+
+    .mail-company { font-size:8px; font-size:0.8rem; }
+
+
+    /*-- END HEADER --*/
+
+    /*-- FEATURES AND CAROUSEL BLOCKS --*/
+
+    .block-features > ul { font-size:6px; font-size:0.6rem; }
+
+    /*-- END FEATURES AND CAROUSEL BLOCKS --*/
+
+    /*-- EXAMPLE BLOCK --*/
+
+    .example-block > button {font-size:6px; font-size:0.6rem;}
+
+    /*-- END EXAMPLE BLOCK --*/
+
+    /*-- THE RANGE OF PRODUCTS BLOCK --*/
+
+    .name-of-roduct { font-size:6px; font-size:0.6rem; }
+
+    .id-product, .volume-product, .cost-product {
+        font-size:6px; font-size:0.6rem;
     }
 
-    @media only screen and (max-width: 480px) {
-        
-        /*-- HEADER --*/
-        
-        .product {font-size:10px; font-size:1rem;}
-        
-        /*-- END HEADER --*/
-        
-        /*-- EXAMPLE BLOCK --*/
-        
-        .example-block > button {font-size:6px; font-size:0.6rem;}
-        
-        
-        /*-- END EXAMPLE BLOCK --*/
+    /*-- QUALITY CERTIFICATES --*/
 
-        
-    }
+    .description-standart { font-size:6px; font-size:0.6rem; }
+
+    /*-- END QUALITY CERTIFICATES --*/
+
+    /*-- REVIEWS BLOCK --*/
+
+    .wrapp-div-for-review > span { font-size: 5px; font-size: 0.5rem; }
+
+    /*-- END REVIEWS BLOCK --*/
+
+    /*-- TERMS OF COOPERATION --*/
+
+    .wrapp-div-for-term > h2 { font-size: 10px; font-size: 1rem;}
+
+    /*-- END TERMS OF COOPERATION --*/
 
 
-   
+    /*-- FOOTER --*/
 
+        footer > a {font-size:10px; font-size:1rem;}
+
+    /*-- END FOOTER --*/   
+
+}
     
