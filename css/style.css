@@ -61,7 +61,28 @@ p {
     text-align: center;
 }
 
+.add-left-margin {
+    margin-left: 18px;
+}
 
+
+a:link {
+    color: #ee5747;
+    text-decoration: none;
+   }
+   
+a:visited {
+    color: #ee5747; 
+}
+
+a:active {
+    color: #a43b30;  
+} 
+
+a:hover {
+    color: #a43b30;
+    text-decoration: underline;
+}
 
 
 /*-- HEADER --*/
@@ -97,17 +118,13 @@ header {
         text-align: center;
     }
 
-        .mail-company:hover {
-            color: #ee5747;
-        }
-
 /*-- END HEADER --*/
 
 /*-- MAIN CONTAINER --*/
 
 .wrapper {
     position: relative;
-    padding: 3% 0 70px 0;
+    padding: 3% 0 18% 0;
 }
 
 .wrapper-section-content {
@@ -152,7 +169,7 @@ header {
     }
     
         .example-block > button {
-            margin: 20px 0 0 0;
+            margin: 20px 0 0 18px;
             font-weight: 700;
             color: white;
             text-decoration: none;
@@ -187,6 +204,7 @@ header {
             display: inline-block;
             width: 100%;
             border-bottom: 1px solid #cccccc;
+            padding: 20px 0 20px 0;
         }
 
             .name-of-roduct {
@@ -221,7 +239,7 @@ header {
                 padding: 20px 0 0 0;
                 color: #333333;
             }
-    
+            
     /*-- END THE RANGE OF PRODUCTS BLOCK --*/
     
     /*-- ABOUT COMPANY BLOCK --*/
@@ -297,17 +315,6 @@ header {
             color: #333333;
         }
         
-        .link-version {
-            text-decoration: none;
-            color: #ee5747;
-        }
-        
-            .link-version:hover {
-                color: #a43b30;
-/*                text-decoration: underline;*/
-            }
-
-
     /*-- END TERMS OF COOPERATION --*/
 
                                 
@@ -328,16 +335,10 @@ footer {
         display: inline-block;
         width: 100%;
         height: 40px;
-        color: #ffffff;
         text-align: center;
         padding: 15px 0 0 0;
-        text-decoration: none;
     }
     
-        footer > a:hover {
-            color: #ee5747;
-        }
-                                
 /*-- END FOOTER --*/   
 
     @media only screen and (max-width: 1920px) {
