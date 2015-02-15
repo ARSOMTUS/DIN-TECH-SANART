@@ -28,7 +28,37 @@
         <!-- FORM FEEDBACK -->
         
         <div id="wrapp_form_feedback">
-            1
+            <div>
+                <h3 class="name-of-form">Связаться</h3>
+                <span class="btn-close">✖</span>
+            </div>
+            <div>
+                <p>
+                    Телефон: +7 (812) 372-67-87, мы работаем с 9:00 до 18:00<br>
+                    Адрес: Санкт-Петербург, ул. Орджоникидзе, 44/3
+                </p>
+            </div>
+            <div>
+                <form class="form-feedback" method="post" action="#">
+                    <div class="section group">
+                        <label class="name-field">Ваше имя:</label>
+                        <input type="text" name="first_name" class="field"><br>
+                        <label class="name-field">Эл. почта:</label>
+                        <input type="email" name="e_mail" class="field"><br>
+                        <label class="name-field">Сообщение:</label>
+                        <textarea name="message"></textarea><br>
+                    </div>
+                    <div class="wrapp-checkbox">
+                        <input type="checkbox" name="get_free_sample" checked
+                               value="yes_ship_sample" class="checkbox-field">
+                        <label>Получить бесплатный образец</label><br>
+                    </div>
+                    <input type="submit" value="Отправить" class="btn btn-submit"><br>
+                    <div class="wrapp-reset-btn">
+                        <input type="reset" value="Очистить" class="btn btn-reset" id="reset_btn">
+                    </div>
+                </form>
+            </div>
         </div>
         
         <!-- END FORM FEEDBACKs -->
@@ -44,7 +74,7 @@
                     </a>
                 </div>
                 <div class="col span_2_of_12">   
-                    <span class="phone-company">
+                    <span class="phone-company color-ver2">
                         (812) 372-67-87
                     </span>
                 </div>
@@ -69,7 +99,7 @@
                 <div class="wrapper-section-content group">
                     <div class="col span_1_of_12"></div>
                     <div class="col span_5_of_12">   
-                        <div class="block-features">
+                        <div class="block-features color-ver2">
                             <h1>
                                 SANART+
                             </h1>
@@ -135,10 +165,10 @@
                 <div class="wrapper-section-content group">
                     <div class="col span_1_of_12"></div>
                     <div class="col span_8_of_12">
-                        <div class="example-block">
-                            <h1>
+                        <div class="example-block color-ver2">
+                            <h2>
                                 Получите бесплатный образец
-                            </h1>
+                            </h2>
                             <p class="add-left-margin">
                                 Мы уверены в качестве продукции и поэтому 
                                 совершенно бесплатно предлагаем вам образец. 
@@ -147,7 +177,7 @@
                                 оценить эффективность и производительность. 
                                 И это вам ничего не будет стоить!
                             </p>
-                            <button>
+                            <button class="btn btn-get-free-sample">
                                 Получить бесплатный образец
                             </button>
                         </div>
@@ -164,9 +194,9 @@
                     <div class="col span_1_of_12"></div>
                     <div class="col span_8_of_12">
                         <div class="range-block">
-                            <h1 class="h1-version">
+                            <h2 class="h2-color-version">
                                 Ассортимент продукции
-                            </h1>
+                            </h2>
                             <div class="row-product">
                                 <div class="col span_2_of_12">
                                     <div class="wrapp-div-for-img">
@@ -176,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ ТОРМОЗОВ
                                     </h3>
                                     <p class="description-product">
@@ -205,7 +235,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ КАРБЮРАТОРА ДРОССЕЛЬНЫХ 
                                         ЗАСЛОНОК
                                     </h3>
@@ -234,7 +264,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         РАСТВОРИТЕЛЬ РЖАВЧИНЫ
                                     </h3>
                                     <p class="description-product">
@@ -263,7 +293,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         СИНТЕТИЧЕСКАЯ СМАЗКА NFZ 2000
                                     </h3>
                                     <p class="description-product">
@@ -293,7 +323,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         СПРЕЙ ДЛЯ АККУМУЛЯТОРНЫХ КЛЕММ
                                     </h3>
                                     <p class="description-product">
@@ -321,7 +351,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ СТЁКОЛ
                                     </h3>
                                     <p class="description-product">
@@ -349,7 +379,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ САЛОНА PREMIUM
                                     </h3>
                                     <p class="description-product">
@@ -378,7 +408,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ ИНДУСТРИАЛЬНЫЙ
                                     </h3>
                                     <p class="description-product">
@@ -406,7 +436,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ САЛОНА УНИВЕРСАЛЬНЫЙ
                                     </h3>
                                     <p class="description-product">
@@ -433,7 +463,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ПЕНА ДЛЯ ШИН
                                     </h3>
                                     <p class="description-product">
@@ -461,7 +491,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         MULTI СМАЗКА-СПРЕЙ SWD 40 +
                                     </h3>
                                     <p class="description-product">
@@ -489,7 +519,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         СМАЗКА МЕДНАЯ
                                     </h3>
                                     <p class="description-product">
@@ -520,7 +550,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         СМАЗКА СИЛИКОНОВАЯ
                                     </h3>
                                     <p class="description-product">
@@ -550,7 +580,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         СМАЗКА СУХАЯ PTFE
                                     </h3>
                                     <p class="description-product">
@@ -581,7 +611,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ПРИСАДКА К ДИЗТОПЛИВУ
                                     </h3>
                                     <p class="description-product">
@@ -611,7 +641,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ПРИСАДКА БЕНЗИНОВАЯ
                                     </h3>
                                     <p class="description-product">
@@ -643,7 +673,7 @@
                                     </div>
                                 </div>
                                 <div class="col span_7_of_12">
-                                    <h3 class="name-of-roduct">
+                                    <h3>
                                         ОЧИСТИТЕЛЬ ДЛЯ РУК
                                     </h3>
                                     <p class="description-product">
@@ -676,10 +706,10 @@
                 <div class="wrapper-section-content group">
                     <div class="col span_1_of_12"></div>
                     <div class="col span_8_of_12">
-                        <div class="about-company-block">
-                            <h1>
+                        <div class="about-company-block color-ver2">
+                            <h2>
                                 О компании SANART+
-                            </h1>
+                            </h2>
                             <p class="add-left-margin">
                                 Компания ООО «Санарт Плюс» является одной из 
                                 крупных поставщиков полного спектра расходных 
@@ -726,9 +756,9 @@
                     <div class="col span_1_of_12"></div>
                     <div class="col span_11_of_12">
                         <div class="quality-certificates-block">
-                            <h1 class="h1-version">
+                            <h2 class="h2-color-version">
                                 Сертификаты качества
-                            </h1>
+                            </h2>
                             <div class="col span_3_of_12">
                                 <div class="wrapp-div-for-img">
                                     <img src="images/ohsas_18001.jpg" 
@@ -777,11 +807,11 @@
                     <div class="col span_1_of_12"></div>
                     <div class="col span_11_of_12">
                         <div class="reviews-block">
-                            <h1>
+                            <h2>
                                 Отзывы
-                            </h1>
-                            <div class="col span_4_of_12 clear-margin-top">
-                                <div class="wrapp-div-for-review">
+                            </h2>
+                            <div class="col span_4_of_12">
+                                <div class="wrapp-div-for-review color-ver2">
                                     <p>
                                         Блок с отзывами ваших клиентов, можете 
                                         придумать отзывы сами или скопировать 
@@ -793,8 +823,8 @@
                                     </span>                                    
                                 </div>
                             </div>
-                            <div class="col span_4_of_12 clear-margin-top">
-                                <div class="wrapp-div-for-review">
+                            <div class="col span_4_of_12">
+                                <div class="wrapp-div-for-review color-ver2">
                                     <p>
                                         Блок с отзывами ваших клиентов, можете 
                                         придумать отзывы сами или скопировать 
@@ -806,8 +836,8 @@
                                     </span>                                    
                                 </div>
                             </div>
-                            <div class="col span_3_of_12 clear-margin-top">
-                                <div class="wrapp-div-for-review">
+                            <div class="col span_3_of_12">
+                                <div class="wrapp-div-for-review color-ver2">
                                     <p>
                                         Блок с отзывами ваших клиентов, можете 
                                         придумать отзывы сами или скопировать 
@@ -833,14 +863,14 @@
                     <div class="col span_1_of_12"></div>
                     <div class="col span_11_of_12">
                         <div class="terms-of-cooperation-block">
-                            <h1 class="h1-version">
+                            <h2 class="h2-color-version">
                                 Условия сотрудничества
-                            </h1>
+                            </h2>
                             <div class="col span_4_of_12">
                                 <div class="wrapp-div-for-term">
-                                    <h2>
+                                    <h3>
                                         Реквизиты
-                                    </h2>
+                                    </h3>
                                     <p>
                                         Компания
                                         <a href="#">
@@ -865,9 +895,9 @@
                             </div>
                             <div class="col span_4_of_12">
                                 <div class="wrapp-div-for-term">
-                                    <h2>
+                                    <h3>
                                         Оплата
-                                    </h2>
+                                    </h3>
                                     <p>
                                         Оплата за поставленную продукцию 
                                         осуществляется в рублях безналичным 
@@ -886,9 +916,9 @@
                             </div>
                             <div class="col span_3_of_12">
                                 <div class="wrapp-div-for-term">
-                                    <h2>
+                                    <h3>
                                         Доставка
-                                    </h2>
+                                    </h3>
                                     <p>
                                         Мы бесплатно доставляем продукцию по 
                                         Санкт-Петербургу (в пределах КАД) 

@@ -12,25 +12,44 @@ html { font-size:100%; }
 body {
     font-family: "Roboto",sans-serif;
     background-image: url(../images/background_block.png);
-    color: #ffffff;
-}
-
-.background {
-    background-image: url(../images/background_block.png);
-}
-
-.white-background {
-    background-color: #ffffff;
-}
-
-h1 {
-    margin: 1% 0 2% 0;
-    color: #ee5747;
-}
-
-.h1-version {
     color: #333333;
 }
+
+    .color-ver2 {
+        color: #ffffff;
+    }
+
+    .background {
+        background-image: url(../images/background_block.png);
+    }
+
+    .white-background {
+        background-color: #ffffff;
+    }
+
+h1, h2 {
+    color: #ee5747;
+    margin: 1% 0 2% 0;
+}    
+    
+h1 {
+    font-size:30px; font-size:3rem;
+}
+
+h2 {
+    font-size:25px; font-size:2.5rem;
+}
+
+    .h2-color-version {
+        color: #333333;
+    }
+    
+h3 {
+    margin-bottom: 1%;
+    font-size:15px; font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.3;
+}    
 
 p {
     margin: 0 0 2% 0;
@@ -82,21 +101,134 @@ a:hover {
     display: block;
 }
 
+.btn {
+    font-size:11px; font-size:1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    transition: 0.2s;
+}
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
 /*-- FORM FEEDBACK --*/
 
 #wrapp_form_feedback {
     position: fixed; 
     background-color: #ffffff;
-    color: #333333;
     z-index: 9999;
     display: block;
     
+    width: 45%; 
     height: auto; 
+    margin-left: -22%;  
     left: 50%;  
     top: 15%;
     overflow: auto;
-    padding: 1%;
+    border-radius: 4px;
 }
+
+#wrapp_form_feedback > div {
+        border-bottom: 1px #cccccc solid;
+        padding: 1%;
+}
+
+    .name-of-form {
+        display: inline-block;
+        width: 80%;
+    }
+    
+    .btn-close {
+        display: inline-block;
+        width: 17%;
+        text-align: right;
+        opacity: 0.5;
+    }
+
+        .btn-close:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        
+        .form-feedback {
+            display: block;
+            width: 100%;
+        }
+        
+            .name-field {
+                display: inline-block;
+                width: 38%;
+                text-align: right;
+                float: left;
+                margin: 2% 0 2% 0;
+            }
+        
+            
+            .field, textarea {
+                display: inline-block;
+                width: 38%;
+                height: 25px;
+                margin: 2% 0 2% 2%;
+                border: 1px #cccccc solid;
+                border-radius: 4px;
+            }
+            
+            textarea {
+                height: 70px;
+                resize: none;
+                overflow:auto;
+            }
+            
+            .wrapp-checkbox {
+                display: inline-block;
+                width: 100%;
+                margin: 3% 0 3% 0;
+            }
+            
+                .checkbox-field {
+                    margin: 0 0 0 40%; 
+                }
+            
+        .btn-submit {
+            margin: 2% 0 2% 40%;
+            background: #40c781;
+            box-shadow: 0 -3px #35a76e inset;
+            padding: .5em 1em calc(.5em + 2px);
+        }
+    
+                .btn-submit:hover {
+                    background: #35a76e;
+                }
+
+                .btn-submit:active {
+                    background: #21935a;
+                    box-shadow: 0 3px #21935a inset;
+                }
+        
+        .wrapp-reset-btn {
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+        }
+        
+        .btn-reset {
+            background: #b8b7b7;
+            box-shadow: 0 -3px #767474 inset;
+            padding: .5em 1em calc(.5em + 2px);
+        }
+    
+                .btn-reset:hover {
+                    background: #767474;
+                }
+
+                .btn-reset:active {
+                    background: #767474;
+                    box-shadow: 0 3px #767474 inset;
+                }
 
 
 
@@ -113,10 +245,10 @@ header {
     width: 100%;
     z-index: 9997;
 }
-    
+
     .product {
+        font-size:11px; font-size:1.1rem;
         display: inline-block;
-        color: #ee5747;
         text-decoration: none;
         text-align: center;
         width: 100%;
@@ -125,15 +257,12 @@ header {
     .phone-company {
         display: inline-block;
         width: 100%; 
-        color: #ffffff;
         text-align: center;
     }
     
     .mail-company {
         display: inline-block;
         width: 100%; 
-        color: #ffffff;
-        text-decoration: none;
         text-align: center;
     }
 
@@ -153,12 +282,12 @@ header {
     margin: 40px 0 0 0;
 }
 
-
-    /*-- FEATURES AND CAROUSEL BLOCKS --*/
-    
-    .block-features {
+    .block-features, .example-block, .range-block, .about-company-block,
+    .quality-certificates-block, .reviews-block {
         padding: 14px;
     }
+
+    /*-- FEATURES AND CAROUSEL BLOCKS --*/
     
         .block-features > ul {
             margin: 4% 0 4% 60px;
@@ -184,42 +313,27 @@ header {
     
     /*-- EXAMPLE BLOCK --*/
     
-    .example-block {
-        padding: 14px;
+    .btn-get-free-sample {
+        margin: 20px 0 0 18px;
+        background: #ee5747;
+        box-shadow: 0 -3px #a43b30 inset;
+        padding: .8em 1em calc(.8em + 3px);
     }
-    
-        .example-block > button {
-            margin: 20px 0 0 18px;
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
-            padding: .8em 1em calc(.8em + 3px);
-            border-radius: 3px;
-            border: none;
-            background: #ee5747;
-            box-shadow: 0 -3px #a43b30 inset;
-            transition: 0.2s;
-        }
-    
-                .example-block > button:hover {
-                    background: #a43b30;
-                    cursor: pointer;
-                }
 
-                .example-block > button:active {
-                    background: #8f332a;
-                    box-shadow: 0 3px #8f332a inset;
-                }
+        .btn-get-free-sample:hover {
+            background: #a43b30;
+        }
+
+        .btn-get-free-sample:active {
+            background: #8f332a;
+            box-shadow: 0 3px #8f332a inset;
+        }
         
     /*-- END EXAMPLE BLOCK--*/
     
     
     /*-- THE RANGE OF PRODUCTS BLOCK --*/
     
-    .range-block {
-        padding: 14px;
-    }
-
         .row-product {
             display: inline-block;
             width: 100%;
@@ -227,14 +341,8 @@ header {
             padding: 20px 0 20px 0;
         }
 
-            .name-of-roduct {
-                line-height: 1.3;
-                color: #333333;
-            }
-
             .description-product {
-                padding: 3% 0 0 0;
-                color: #333333;
+                padding: 1% 0 0 0;
                 line-height: 1.3;
                 text-align: justify;
             }
@@ -243,46 +351,29 @@ header {
                 display: inline-block;
                 width: 100%;
                 padding: 3% 0 0 0;
-                color: #333333;
             }
 
             .volume-product {
                 display: inline-block;
                 width: 100%;
                 padding: 1% 0 0 0;
-                color: #333333;
             }
 
             .cost-product {
                 display: inline-block;
                 width: 100%;
                 padding: 3% 0 0 0;
-                color: #333333;
             }
             
     /*-- END THE RANGE OF PRODUCTS BLOCK --*/
     
     
-    /*-- ABOUT COMPANY BLOCK --*/
-    
-    .about-company-block {
-        padding: 14px;
-    }
-    
-    /*-- END ABOUT COMPANY BLOCK --*/
-    
-    
     /*-- QUALITY CERTIFICATES --*/
-    
-    .quality-certificates-block {
-        padding: 14px;
-    }
     
     .description-standart {
         display: inline-block;
         width: 100%;
         text-align: center;
-        color: #333333;
         line-height: 1.3;
     }
     
@@ -291,10 +382,6 @@ header {
     
     /*-- REVIEWS BLOCK --*/
     
-    .reviews-block {
-        padding: 14px;
-    }
-
     .wrapp-div-for-review {
         display: inline-block;
         width: 100%;
@@ -307,6 +394,7 @@ header {
         }
 
         .wrapp-div-for-review > span {
+            font-size: 8px; font-size: 0.8rem;
             display: inline-block;
             width: 90%;
             padding: 0 0 0 2%;
@@ -326,17 +414,6 @@ header {
         width: 100%;
     }
 
-        .wrapp-div-for-term > h2 {
-            color: #333333;
-            margin-bottom: 2%;
-            font-weight: 200;
-            line-height: 30px;
-        }
-
-        .wrapp-div-for-term > p {
-            color: #333333;
-        }
-        
     /*-- END TERMS OF COOPERATION --*/
 
                                 
@@ -364,56 +441,17 @@ footer {
     
 /*-- END FOOTER --*/   
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 640px) and (max-width: 999px) {
         
-        
-    h1, .h1-version {font-size:30px; font-size:3rem;}
-
-    /*-- HEADER --*/
+    h1 {font-size:17px; font-size:1.7rem;}
     
-    #wrapp_form_feedback {
-        width: 45%; 
-        margin-left: -22%;  
-    }
-
-    .product {font-size:11px; font-size:1.1rem;}
-
-    /*-- END HEADER --*/
-
-    /*-- FEATURES AND CAROUSEL BLOCKS --*/
-    /*-- END FEATURES AND CAROUSEL BLOCKS --*/
-
-
-    /*-- EXAMPLE BLOCK --*/
-
-    .example-block > button {font-size:11px; font-size:1.1rem;}
-
-    /*-- END EXAMPLE BLOCK --*/
-
-
-    /*-- THE RANGE OF PRODUCTS BLOCK --*/
-    /*-- END THE RANGE OF PRODUCTS BLOCK --*/
-
-    /*-- REVIEWS BLOCK --*/
-
-    .wrapp-div-for-review > span { font-size: 8px; font-size: 0.8rem; }
-
-    /*-- END REVIEWS BLOCK --*/
-
-
-    /*-- TERMS OF COOPERATION --*/
-
-    .wrapp-div-for-term > h2 { font-size: 15px; font-size: 1.5rem;}
-
-    /*-- END TERMS OF COOPERATION --*/
-        
-}
+    h2 {font-size:15px; font-size:1.5rem;}
     
-@media only screen and (min-width: 640px) and (max-width: 1000px) {
-        
-    h1, .h1-version {font-size:17px; font-size:1.7rem;}
+    h3 {font-size:13px; font-size:1.3rem;}
 
     p {font-size:7px; font-size:0.7rem;}
+    
+    .btn {font-size:7px; font-size:0.7rem;}
     
     /*-- FORM FEEDBACK --*/
 
@@ -421,6 +459,18 @@ footer {
         width: 55%; 
         margin-left: -27%;  
     }
+    
+        .name-field {
+        font-size: 7px; font-size: 0.7rem;
+        }
+            
+        .field, textarea {
+            width: 40%;
+        }
+            
+            .checkbox-field + label {
+                font-size: 7px; font-size: 0.7rem;
+            }
 
     /*-- END FORM FEEDBACK --*/
 
@@ -441,13 +491,6 @@ footer {
     /*-- END FEATURES AND CAROUSEL BLOCKS --*/
 
 
-    /*-- EXAMPLE BLOCK --*/
-
-        .example-block > button {font-size:7px; font-size:0.7rem;}
-
-    /*-- END EXAMPLE BLOCK --*/
-
-
     /*-- THE RANGE OF PRODUCTS BLOCK --*/
 
         .name-of-roduct { font-size:7px; font-size:0.7rem; }
@@ -455,12 +498,16 @@ footer {
         .id-product, .volume-product, .cost-product {
             font-size:7px; font-size:0.7rem;
         }
+        
+    /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+
 
     /*-- QUALITY CERTIFICATES --*/
 
         .description-standart { font-size:7px; font-size:0.7rem; }
 
     /*-- END QUALITY CERTIFICATES --*/
+    
 
     /*-- REVIEWS BLOCK --*/
 
@@ -468,28 +515,57 @@ footer {
 
     /*-- END REVIEWS BLOCK --*/
 
-    /*-- TERMS OF COOPERATION --*/
-
-        .wrapp-div-for-term > h2 { font-size: 11px; font-size: 1.1rem;}
-
-    /*-- END TERMS OF COOPERATION --*/
-
 }
 
 
-@media only screen and (min-width: 300px) and (max-width: 640px) {
+@media only screen and (min-width: 300px) and (max-width: 639px) {
         
-    h1, .h1-version {font-size:11px; font-size:1.1rem;}
+    h1 {font-size:14px; font-size:1.4rem;}
+    
+    h2 {font-size:12px; font-size:1.2rem;}
+    
+    h3 {font-size:10px; font-size:1rem;}
 
     p {font-size:6px; font-size:0.6rem;}
+    
+    .btn { font-size:6px; font-size:0.6rem; }
     
     /*-- FORM FEEDBACK --*/
 
     #wrapp_form_feedback {
-        width: 65%; 
-        margin-left: -32%;  
+        width: 83%; 
+        margin-left: -41%;  
     }
+    
+            .name-field {
+                width: 98%;
+                text-align: left;
+                font-size: 6px; font-size: 0.6rem;
+            }
+            
+            .field, textarea {
+                width: 98%;
+                margin: 0 0 2% 0;
+            }
+            
+            .wrapp-checkbox {
+                text-align: center;
+                margin: 4% 0 6% 0;
+            }
+            
+                .checkbox-field {
+                    margin: 0;
+                }
+                
+                .checkbox-field + label {
+                    font-size: 6px; font-size: 0.6rem;
+                }
 
+        .btn-submit {
+            width: 100%;
+            margin: 0 0 6% 0;
+        }
+        
     /*-- END FORM FEEDBACK --*/
 
 
@@ -501,20 +577,15 @@ footer {
 
     .mail-company { font-size:8px; font-size:0.8rem; }
 
-
     /*-- END HEADER --*/
+    
 
     /*-- FEATURES AND CAROUSEL BLOCKS --*/
 
     .block-features > ul { font-size:6px; font-size:0.6rem; }
 
     /*-- END FEATURES AND CAROUSEL BLOCKS --*/
-
-    /*-- EXAMPLE BLOCK --*/
-
-    .example-block > button {font-size:6px; font-size:0.6rem;}
-
-    /*-- END EXAMPLE BLOCK --*/
+    
 
     /*-- THE RANGE OF PRODUCTS BLOCK --*/
 
@@ -523,24 +594,22 @@ footer {
     .id-product, .volume-product, .cost-product {
         font-size:6px; font-size:0.6rem;
     }
+    
+    /*-- END THE RANGE OF PRODUCTS BLOCK --*/
+        
 
     /*-- QUALITY CERTIFICATES --*/
 
     .description-standart { font-size:6px; font-size:0.6rem; }
 
     /*-- END QUALITY CERTIFICATES --*/
+    
 
     /*-- REVIEWS BLOCK --*/
 
     .wrapp-div-for-review > span { font-size: 5px; font-size: 0.5rem; }
 
     /*-- END REVIEWS BLOCK --*/
-
-    /*-- TERMS OF COOPERATION --*/
-
-    .wrapp-div-for-term > h2 { font-size: 10px; font-size: 1rem;}
-
-    /*-- END TERMS OF COOPERATION --*/
 
 
     /*-- FOOTER --*/
