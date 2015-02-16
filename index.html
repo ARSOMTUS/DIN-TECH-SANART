@@ -30,7 +30,7 @@
         <div id="wrapp_form_feedback">
             <div class="add-border-bottom">
                 <h3 class="name-of-form">Связаться</h3>
-                <span class="btn-close">✖</span>
+                <span id="btn_close">✖</span>
             </div>
             <div class="add-border-bottom">
                 <p>
@@ -39,7 +39,7 @@
                 </p>
             </div>
             <div>
-                <form class="form-feedback" method="post" action="#">
+                <form id="form_feedback" method="post" action="#">
                     <div class="section group">
                         <label class="label-field">Ваше имя:</label>
                         <input type="text" name="first_name" class="field"><br>
@@ -79,7 +79,7 @@
                     </span>
                 </div>
                 <div class="col span_2_of_12">   
-                    <a href="#" class="mail-company">
+                    <a href="#" class="mail-company" id="e_mail_din_tech">
                         globe@din-tech.ru
                     </a>
                 </div>            
@@ -177,7 +177,8 @@
                                 оценить эффективность и производительность. 
                                 И это вам ничего не будет стоить!
                             </p>
-                            <button class="btn btn-get-free-sample">
+                            <button class="btn btn-get-free-sample" 
+                                    id="btn_get_free_sample">
                                 Получить бесплатный образец
                             </button>
                         </div>

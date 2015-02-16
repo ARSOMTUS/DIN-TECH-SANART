@@ -99,6 +99,7 @@ a:hover {
     margin: 0;
     opacity: 0.5;
     display: none;
+    overflow: auto;
 }
 
 .btn {
@@ -115,21 +116,19 @@ a:hover {
             cursor: pointer;
         }
 
+        
 /*-- FORM FEEDBACK --*/
 
 #wrapp_form_feedback {
-    position: fixed; 
+    position: absolute; 
     background-color: #ffffff;
     z-index: 9999;
     display: none;
     
     width: 45%; 
-    height: 54%;
-    overflow-y: auto;
     margin-left: -22%;  
     left: 50%;  
-    top: 10%;
-    overflow: auto;
+    top: 70px;
     border-radius: 4px;
 }
 
@@ -142,19 +141,19 @@ a:hover {
         width: 80%;
     }
     
-    .btn-close {
+    #btn_close {
         display: inline-block;
         width: 17%;
         text-align: right;
         opacity: 0.5;
     }
 
-        .btn-close:hover {
+        #btn_close:hover {
             opacity: 1;
             cursor: pointer;
         }
         
-        .form-feedback {
+        #form_feedback {
             display: block;
             width: 100%;
         }
@@ -459,7 +458,8 @@ footer {
 
     #wrapp_form_feedback {
         width: 55%; 
-        margin-left: -27%;  
+        margin-left: -27%;
+/*        height: 38%;*/
     }
     
         .label-field {
@@ -536,10 +536,11 @@ footer {
 
     #wrapp_form_feedback {
         width: 83%; 
-        margin-left: -41%;  
+        margin-left: -41%;
+/*        height: 80%;*/
     }
     
-    .form-feedback {
+    #form_feedback {
         margin: 4% 0 0 0;
     }
     
