@@ -7,7 +7,9 @@ and open the template in the editor.
     Author     : emorozov
 */
 
-html { font-size:100%; }
+html { 
+    font-size:100%;
+}
 
 body {
     font-family: "Roboto",sans-serif;
@@ -127,8 +129,7 @@ a:hover {
     
     width: 45%; 
     margin-left: -22%;  
-    left: 50%;  
-    top: 70px;
+    left: 50%;
     border-radius: 4px;
 }
 
@@ -266,6 +267,10 @@ header {
         width: 100%; 
         text-align: center;
     }
+    
+        .mail-company:hover {
+            cursor: pointer;
+        }
 
 /*-- END HEADER --*/
 
@@ -459,7 +464,6 @@ footer {
     #wrapp_form_feedback {
         width: 55%; 
         margin-left: -27%;
-/*        height: 38%;*/
     }
     
         .label-field {
@@ -537,7 +541,6 @@ footer {
     #wrapp_form_feedback {
         width: 83%; 
         margin-left: -41%;
-/*        height: 80%;*/
     }
     
     #form_feedback {

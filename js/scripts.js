@@ -4,91 +4,103 @@
  * and open the template in the editor.
  */
 
-window.onload = function() {
+$(window).load(function() {
+    
+    /* SLIDER START */
+        
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+      
+    /**/  
 
-    function setHandlers(){
+
+    /* SHOW OR HIDE FEEDBACK FORM  */
+
+    var subLayer = $('#sub_layer');
+    var wrappFormFeedback = $('#wrapp_form_feedback');
+    var formFeedback = $('#form_feedback');
+    
+    var scrollYCoord = 0;
+    
+    
+    $( "#btn_get_free_sample, #e_mail_din_tech" ).click(function() {
         
-        /* HANDLERS FOR SHOW OR HIDE FEEDBACK FORM  */
+        scrollYCoord = $('html').scrollTop();
+        wrappFormFeedback.css('top', scrollYCoord + 70 );
+        wrappFormFeedback.css('display','block');
+        subLayer.css('display','block');
         
-        var subLayer = document.getElementById('sub_layer');
-        var wrappFormFeedback = document.getElementById('wrapp_form_feedback');
+    });
+    
+    $( "#btn_close, #subLayer" ).click(function() {
         
-        var emailDinTech = document.getElementById('e_mail_din_tech');
-        var btnGetFreeSample = document.getElementById('btn_get_free_sample');
-        
-        var btnClose = document.getElementById('btn_close');
-        
-        var showForm = function(){
-            
-            subLayer.style.display = 'block';
-            wrappFormFeedback.style.display = 'block';
-        };
-        
-        var closeForm = function(){
-            
-            var rConfirm = confirm("Закрыть окно? Введённые данные будут утеряны.");
+        var rConfirm = confirm("Закрыть окно? Введённые данные будут утеряны.");
             
             if (rConfirm === true){
                 
-                subLayer.style.display = 'none';
-                wrappFormFeedback.style.display = 'none';
-                document.getElementById("form_feedback").reset();
+                wrappFormFeedback.css('display','none');
+                subLayer.css('display','none');
+                formFeedback.get(0).reset();
+                
             }
             else{}
-        };
         
-        btnGetFreeSample.addEventListener('click', showForm);
-        emailDinTech.addEventListener('click', showForm);
-        
-        subLayer.addEventListener('click',closeForm);
-        btnClose.addEventListener('click',closeForm);
-        
-        
-
-//        var btnHideMoreInfo = document.getElementById('hide_more_info_btn');
-//        var blockMoreInfo = document.getElementById('more_info_block');
-//        var btnsHideMoreInfo = document.getElementsByClassName('hide-more-info-btn');
-//        var btnChanged = false;
-//
-//        var showMoreInfo = function(){
-//            blockMoreInfo.style.display = 'block';
-//        };
-//        
-//        var hideMoreInfo = function(){
-//            blockMoreInfo.style.display = 'none';
-//        };
-//        
-//        var changeBtnMoreInfo = function(){
-//            
-//            if(btnChanged === false){
-//                
-//                btnMoreInfo.style.display = 'none';
-//                btnHideMoreInfo.style.display = 'inline-block';
-//                
-//                btnChanged = true;
-//                
-//            }
-//            else{
-//                
-//                btnMoreInfo.style.display = 'inline-block';
-//                btnHideMoreInfo.style.display = 'none';
-//                
-//                btnChanged = false;
-//                
-//            }
-//        
-//        };
-//        for (var i = 0; i < btnsHideMoreInfo.length; i++) {
-//        
-//            btnsHideMoreInfo[i].addEventListener('click', hideMoreInfo);
-//            btnsHideMoreInfo[i].addEventListener('click', changeBtnMoreInfo);
-//        
-//        }
-//        
-//        btnMoreInfo.addEventListener('click', showMoreInfo);
-//        btnMoreInfo.addEventListener('click', changeBtnMoreInfo);
-        
-    }setHandlers();
-
+    });
     
-};
+    /* END SHOW OR HIDE FEEDBACK FORM*/
+
+});
+
+
+//window.onload = function() {
+
+//    function setHandlers(){
+        
+        /* HANDLERS FOR SHOW OR HIDE FEEDBACK FORM  */
+        
+//        var subLayer = document.getElementById('sub_layer');
+//        var wrappFormFeedback = document.getElementById('wrapp_form_feedback');
+//        
+//        var emailDinTech = document.getElementById('e_mail_din_tech');
+//        var btnGetFreeSample = document.getElementById('btn_get_free_sample');
+//        
+//        var btnClose = document.getElementById('btn_close');
+//        var pageYCoord = 0;
+//        
+//        var htmlTag = document.documentElement;
+//        
+//        var showForm = function(){
+//            
+//            pageYCoord = window.pageYOffset;
+//            wrappFormFeedback.style.top = pageYCoord + 70 + 'px';
+//            
+//            htmlTag.scrollTop = pageYCoord;
+//            
+//            subLayer.style.display = 'block';
+//            wrappFormFeedback.style.display = 'block';
+//            
+//        };
+//        
+//        var closeForm = function(){
+//            
+//            var rConfirm = confirm("Закрыть окно? Введённые данные будут утеряны.");
+//            
+//            if (rConfirm === true){
+//                
+//                subLayer.style.display = 'none';
+//                wrappFormFeedback.style.display = 'none';
+//                document.getElementById("form_feedback").reset();
+//            }
+//            else{}
+//        };
+//        
+//        btnGetFreeSample.addEventListener('click', showForm);
+//        emailDinTech.addEventListener('click', showForm);
+//        
+//        subLayer.addEventListener('click',closeForm);
+//        btnClose.addEventListener('click',closeForm);
+        
+//    }setHandlers();
+    
+//};
