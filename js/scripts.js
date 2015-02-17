@@ -33,7 +33,7 @@ $(window).load(function() {
         
     });
     
-    $( "#btn_close, #subLayer" ).click(function() {
+    $( "#btn_close, #sub_layer" ).click(function() {
         
         var rConfirm = confirm("Закрыть окно? Введённые данные будут утеряны.");
             
