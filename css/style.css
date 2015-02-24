@@ -91,152 +91,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#sub_layer {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 9998;
-    padding: 0;
-    margin: 0;
-    opacity: 0.5;
-    display: none;
-    overflow: auto;
-}
-
-.btn {
-    font-size:11px; font-size:1.1rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 3px;
-    border: none;
-    transition: 0.2s;
-}
-
-        .btn:hover {
-            cursor: pointer;
-        }
         
-/*-- FORM FEEDBACK --*/
-
-#wrapp_form_feedback {
-    position: absolute; 
-    background-color: #ffffff;
-    z-index: 9999;
-    display: none;
-    
-    width: 45%; 
-    margin-left: -22%;  
-    left: 50%;
-    border-radius: 4px;
-}
-
-#wrapp_form_feedback > div {
-        padding: 1%;
-}
-
-    .name-of-form {
-        display: inline-block;
-        width: 80%;
-    }
-    
-    #btn_close {
-        display: inline-block;
-        width: 17%;
-        text-align: right;
-        opacity: 0.5;
-    }
-
-        #btn_close:hover {
-            opacity: 1;
-            cursor: pointer;
-        }
-        
-        #form_feedback {
-            display: block;
-            width: 100%;
-        }
-        
-            .label-field {
-                display: inline-block;
-                width: 38%;
-                text-align: right;
-                float: left;
-                margin: 2% 0 2% 0;
-            }
-        
-            
-            .field, textarea {
-                display: inline-block;
-                width: 38%;
-                height: 25px;
-                margin: 2% 0 2% 2%;
-                border: 1px #cccccc solid;
-                border-radius: 4px;
-            }
-            
-            textarea {
-                height: 70px;
-                resize: none;
-                overflow:auto;
-            }
-            
-            .wrapp-checkbox {
-                display: inline-block;
-                width: 100%;
-                margin: 3% 0 3% 0;
-            }
-            
-                .checkbox-field {
-                    margin: 0 0 0 40%; 
-                }
-            
-        .btn-submit {
-            margin: 2% 0 2% 40%;
-            background: #40c781;
-            box-shadow: 0 -3px #35a76e inset;
-            padding: .5em 1em calc(.5em + 2px);
-        }
-    
-                .btn-submit:hover {
-                    background: #35a76e;
-                }
-
-                .btn-submit:active {
-                    background: #21935a;
-                    box-shadow: 0 3px #21935a inset;
-                }
-        
-        .wrapp-reset-btn {
-            display: inline-block;
-            width: 100%;
-            text-align: right;
-        }
-        
-        .btn-reset {
-            background: #b8b7b7;
-            box-shadow: 0 -3px #767474 inset;
-            padding: .5em 1em calc(.5em + 2px);
-        }
-    
-                .btn-reset:hover {
-                    background: #767474;
-                }
-
-                .btn-reset:active {
-                    background: #767474;
-                    box-shadow: 0 3px #767474 inset;
-                }
-                
-        .add-border-bottom {
-            border-bottom: 1px #cccccc solid;
-        }        
-
-/*-- END FORM FEEDBACK --*/
-
-
-
 /*-- HEADER --*/
         
 header {
@@ -267,10 +122,6 @@ header {
         text-align: center;
     }
     
-        .mail-company:hover {
-            cursor: pointer;
-        }
-
 /*-- END HEADER --*/
 
 
@@ -314,28 +165,6 @@ header {
     }
     
     /*-- END FEATURES AND CAROUSEL BLOCKS--*/
-    
-    
-    /*-- EXAMPLE BLOCK --*/
-    
-    .btn-get-free-sample {
-        margin: 20px 0 0 18px;
-        background: #ee5747;
-        box-shadow: 0 -3px #a43b30 inset;
-        padding: .8em 1em calc(.8em + 3px);
-    }
-
-        .btn-get-free-sample:hover {
-            background: #a43b30;
-        }
-
-        .btn-get-free-sample:active {
-            background: #8f332a;
-            box-shadow: 0 3px #8f332a inset;
-        }
-        
-    /*-- END EXAMPLE BLOCK--*/
-    
     
     /*-- THE RANGE OF PRODUCTS BLOCK --*/
     
@@ -383,30 +212,6 @@ header {
     }
     
     /*-- END QUALITY CERTIFICATES --*/
-    
-    
-    /*-- REVIEWS BLOCK --*/
-    
-    .wrapp-div-for-review {
-        display: inline-block;
-        width: 100%;
-        border-left: 5px solid #ee5747;
-        margin: 3% auto;
-    }
-    
-        .wrapp-div-for-review > p {
-            padding: 2%;
-        }
-
-        .wrapp-div-for-review > span {
-            font-size: 8px; font-size: 0.8rem;
-            display: inline-block;
-            width: 90%;
-            padding: 0 0 0 2%;
-            line-height: 1.3;
-        }
-    
-    /*-- END REVIEWS BLOCK --*/
     
     /*-- TERMS OF COOPERATION --*/
     
@@ -456,30 +261,6 @@ footer {
 
     p {font-size:7px; font-size:0.7rem;}
     
-    .btn {font-size:7px; font-size:0.7rem;}
-    
-    /*-- FORM FEEDBACK --*/
-
-    #wrapp_form_feedback {
-        width: 55%; 
-        margin-left: -27%;
-    }
-    
-        .label-field {
-        font-size: 7px; font-size: 0.7rem;
-        }
-            
-        .field, textarea {
-            width: 40%;
-        }
-            
-            .checkbox-field + label {
-                font-size: 7px; font-size: 0.7rem;
-            }
-
-    /*-- END FORM FEEDBACK --*/
-
-
     /*-- HEADER --*/
 
     .phone-company { font-size:8px; font-size:0.8rem; }
@@ -513,13 +294,6 @@ footer {
 
     /*-- END QUALITY CERTIFICATES --*/
     
-
-    /*-- REVIEWS BLOCK --*/
-
-        .wrapp-div-for-review > span { font-size: 5px; font-size: 0.5rem; }
-
-    /*-- END REVIEWS BLOCK --*/
-
 }
 
 
@@ -533,52 +307,6 @@ footer {
 
     p {font-size:6px; font-size:0.6rem;}
     
-    .btn { font-size:6px; font-size:0.6rem; }
-    
-    /*-- FORM FEEDBACK --*/
-
-    #wrapp_form_feedback {
-        width: 83%; 
-        margin-left: -41%;
-    }
-    
-    #form_feedback {
-        margin: 4% 0 0 0;
-    }
-    
-            .label-field {
-                width: 95%;
-                text-align: left;
-                font-size: 6px; font-size: 0.6rem;
-                margin: 0 0 2% 3%;
-            }
-            
-            .field, textarea {
-                width: 92%;
-                margin: 0 3% 2% 3%;
-            }
-            
-            .wrapp-checkbox {
-                text-align: center;
-                margin: 4% 0 6% 0;
-            }
-            
-                .checkbox-field {
-                    margin: 0;
-                }
-                
-                .checkbox-field + label {
-                    font-size: 6px; font-size: 0.6rem;
-                }
-
-        .btn-submit {
-            width: 92%;
-            margin: 0 3% 6% 3%;
-        }
-        
-    /*-- END FORM FEEDBACK --*/
-
-
     /*-- HEADER --*/
 
     .product {font-size:10px; font-size:1rem;}
@@ -614,14 +342,6 @@ footer {
 
     /*-- END QUALITY CERTIFICATES --*/
     
-
-    /*-- REVIEWS BLOCK --*/
-
-    .wrapp-div-for-review > span { font-size: 5px; font-size: 0.5rem; }
-
-    /*-- END REVIEWS BLOCK --*/
-
-
     /*-- FOOTER --*/
 
         footer > a {font-size:10px; font-size:1rem;}
