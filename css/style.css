@@ -104,6 +104,7 @@ header {
 
     .product {
         font-size:11px; font-size:1.1rem;
+        color: #ee5747;
         display: inline-block;
         text-decoration: none;
         text-align: center;
